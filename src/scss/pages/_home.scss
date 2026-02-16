@@ -1,0 +1,136 @@
+@use "../abstracts/variables" as *;
+
+
+
+.featured {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+
+}
+
+
+
+.activities {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__tabs {
+        font-size: 16px;
+        justify-content: center;
+    }
+
+}
+
+.about {
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    &__title {
+        font-family: $font-brand;
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.2;
+        color: $primary-800;
+    }
+
+    &__text {
+        font-family: $font-body;
+        font-size: 1rem;
+        color: $neutral-600;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    &__item {
+        background: $neutral-50;
+        padding: 2rem 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        &-title {
+            font-family: $font-brand;
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            color: $primary-800;
+        }
+
+        &-text {
+            font-family: $font-body;
+            font-size: 0.95rem;
+            color: $neutral-600;
+            line-height: 1.5;
+        }
+    }
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        margin: 0 auto 0.8rem;
+    }
+
+    &__highlight {
+        font-family: $font-brand;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: $primary-700;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.4;
+    }
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+    .about__grid {
+        gap: 1.5rem;
+    }
+}
+
+.testimonials {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+
+.faq {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 4rem 0 4rem 0;
+
+}
+
+
+.bottom {
+    background-color: $neutral-900;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.8rem;
+    color: $neutral-300;
+}

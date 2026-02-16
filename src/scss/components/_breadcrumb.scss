@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as *;
+
+
+.breadcrumb {
+    margin: 5rem 5rem 0;
+    padding: 2rem 0 0;
+    font-size: 0.9rem;
+    background: transparent;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &:not(:last-child)::after {
+            content: "›";
+            margin: 0 0.5rem;
+            color: #adb5bd;
+            font-weight: 500;
+        }
+    }
+
+    &__link {
+        color: #212529;
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        &:hover {
+            color: $primary-500;
+            text-decoration: underline;
+        }
+    }
+
+    &__item.active {
+        color: $neutral-300;
+        pointer-events: none;
+        font-weight: 500;
+    }
+
+    @media screen and (max-width: 700px) {
+        display: none;
+
+    }
+}

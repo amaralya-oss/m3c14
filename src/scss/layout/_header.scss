@@ -1,0 +1,65 @@
+@use "../abstracts/variables" as *;
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: transparent;
+    z-index: 1000;
+
+    &__nav {
+        width: 100%;
+    }
+
+    &__logo {
+        font-size: 24px;
+        font-family: $font-brand;
+        color: $neutral-50;
+    }
+
+    &__menu {
+        gap: 1rem; // separación entre links
+    }
+
+    &__link {
+        color: $neutral-100;
+        font-weight: 500;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $secondary-300;
+            border-bottom: 1px solid $secondary-300;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header__nav {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    &--solid {
+        position: fixed;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.131);
+        background: #49535ba5;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+        .header__logo {
+            color: $neutral-50;
+        }
+
+        .header__link {
+            color: $neutral-100;
+
+            &:hover {
+                color: $secondary-300;
+                border-bottom: 1px solid $secondary-300;
+            }
+        }
+    }
+}

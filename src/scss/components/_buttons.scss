@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as *;
+
+.button-primary {
+    background-color: $primary;
+    border: none;
+    padding: 0.85rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $primary-900;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $secondary;
+        color: $neutral-50;
+        transform: translateY(-2px);
+    }
+}
+
+
+.button-secondary {
+    background-color: $neutral-50;
+    border: 2px solid $secondary-200;
+    color: $secondary;
+    padding: 0.85rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $secondary;
+        color: $neutral-50;
+        transform: translateY(-2px);
+    }
+}

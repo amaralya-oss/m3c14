@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+
+
+body {
+    font-family: $font-body;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-brand;
+
+}
+
+
+.header__logo {
+    font-family: $font-brand;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.footer__logo {
+    font-family: $font-brand;
+    font-style: italic;
+    font-weight: 400;
+}

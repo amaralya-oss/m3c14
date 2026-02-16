@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raíz Salvaje | Ecoturismo en La Araucanía</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS compilado -->
+    <link rel="stylesheet" href="src/scss/style.css">
+
+    <!-- Fuente Material Symbols (Google) -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Sección: HEADER -->
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav d-flex align-items-center justify-content-between">
+
+                <!-- Logo -->
+                <div class="header__brand">
+                    <h1 class="header__logo m-0">Raíz Salvaje</h1>
+                </div>
+
+                <!-- Menú -->
+                <ul class="header__menu nav m-0">
+                    <li class="header__item nav-item">
+                        <a class="header__link nav-link px-3" href="#">Inicio</a>
+                    </li>
+                    <li class="header__item nav-item">
+                        <a class="header__link nav-link px-3" href="#activities">Actividades</a>
+                    </li>
+                    <li class="header__item nav-item">
+                        <a class="header__link nav-link px-3" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+
+
+    <section class="hero">
+        <div class="hero__image"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__container container">
+            <h1 class="hero__title">Ecoturismo en la Araucanía Andina</h1>
+            <p class="hero__text">Experiencias de bajo impacto en territorios de historia viva.
+                Cupos limitados para preservar el equilibrio natural</p>
+
+            <button class="footer__button button-primary" id="btnActivities">
+                Ver aventuras disponibles
+            </button>
+
+        </div>
+    </section>
+
+
+
+    <!-- Sección: DESTACADAS -->
+    <section class="featured">
+        <div class="featured__container container">
+            <h2 class="featured__title text-center mb-4">Aventuras Destacadas</h2>
+
+            <div class="featured__grid">
+                <!-- Tarjeta 1 -->
+                <article class="featured__card card" data-level="high">
+                    <a href="actividad.html" class="stretched-link"></a>
+                    <!-- Bootstrap stretched-link cubre toda la tarjeta -->
+                    <img src="https://images.unsplash.com/photo-1613444205117-8bae7ac2674b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="Nombre de actividad">
+                    <div class="featured__card-body card-body">
+                        <span class="featured__badge level-badge">Dificultad Alta</span>
+
+                        <h5 class="featured__card-title">Downhill araucarias</h5>
+                        <p class="featured__card-location">📍 Malalcahuello, Araucanía </p>
+                        <p class="featured__card-availability">Cupos disponibles: <strong>8</strong>
+
+                        </p>
+                        <p class="featured__card-price">Costo por persona: <strong>$45.000 CLP</strong>
+
+                        </p>
+                        <div class="featured__actions">
+                            <button type="button" class="featured__button btn btn-outline-primary">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="featured__card card" data-level="medium">
+                    <a href="actividad.html" class="stretched-link"></a>
+                    <img src="https://melipewunko.cl/wp-content/uploads/2025/05/Tour-Reserva-Nacional-de-China-Muerta-Turismo-Melipewunko-5.jpg"
+                        class="card-img-top" alt="Senderismo en Bosque de Araucarias">
+                    <div class="featured__card-body card-body">
+                        <span class="featured__badge level-badge">Dificultad Media</span>
+                        <h5 class="featured__card-title">Senderismo Araucarias Milenarias</h5>
+                        <p class="featured__card-location">📍 Melipeuco, Araucanía</p>
+                        <p class="featured__card-availability">Cupos disponibles: <strong>12</strong></p>
+                        <p class="featured__card-price">Costo por persona: <strong>$25.000 CLP</strong></p>
+                        <div class="featured__actions">
+                            <button type="button" class="featured__button btn btn-outline-primary">Ver detalles</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="featured__card card" data-level="low">
+                    <a href="actividad.html" class="stretched-link"></a>
+                    <img src="https://d6myp1633h7qr.cloudfront.net/products/339e8625-a428-47fd-bf93-dd7d41b77c6d_desktop.webp"
+                        class="card-img-top" alt="Kayak en Lago Conguillio">
+                    <div class="featured__card-body card-body">
+                        <span class="featured__badge level-badge">Dificultad Baja</span>
+
+                        <h5 class="featured__card-title">Kayak en Lago Conguillío</h5>
+                        <p class="featured__card-location">📍 PN Conguillío, Melipeuco, Araucanía</p>
+                        <p class="featured__card-availability">Cupos disponibles: <strong>6</strong></p>
+                        <p class="featured__card-price">Costo por persona: <strong>$20.000 CLP</strong></p>
+                        <div class="featured__actions">
+                            <button type="button" class="featured__button btn btn-outline-primary">Ver detalles</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: SOBRE NOSOTROS -->
+    <section class="about py-5">
+        <div class="about__container container">
+            <!-- Título principal -->
+            <h2 class="about__title text-center mb-4">
+                Conecta con la naturaleza y la cultura de la Araucanía Andina
+            </h2>
+
+            <!-- Introducción -->
+            <p class="about__text text-center mb-5">
+                En Raíz Salvaje diseñamos aventuras que te acercan a la naturaleza,
+                respetando cada río, bosque y comunidad. Nuestro ecoturismo es responsable,
+                consciente y sin dejar huella negativa en la región.
+            </p>
+
+            <!-- Grid de beneficios / cards -->
+            <div class="about__grid">
+                <div class="about__item">
+                    <h3 class="about__item-title">Visión</h3>
+                    <p class="about__item-text">
+                        Conectar a las personas con la naturaleza y la cultura local, preservando
+                        biodiversidad y territorios ancestrales.
+                    </p>
+                </div>
+
+                <div class="about__item">
+                    <h3 class="about__item-title">Misión</h3>
+                    <p class="about__item-text">
+                        Crear experiencias seguras e inmersivas, destacando la riqueza natural
+                        y cultural de la Araucanía Andina sin alterar su equilibrio.
+                    </p>
+                </div>
+
+                <div class="about__item">
+                    <h3 class="about__item-title">Compromiso</h3>
+                    <p class="about__item-text">
+                        Trabajamos junto a comunidades locales, promoviendo un turismo inclusivo
+                        y consciente, respetando la historia viva del territorio.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Highlight final -->
+            <p class="about__highlight mt-5 text-center">
+                Cada aventura está diseñada para disfrutar de la naturaleza sin dañarla,
+                apoyando a las comunidades locales y promoviendo un turismo consciente
+                que deja recuerdos, no huellas.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- Sección: ACTIVIDADES -->
+    <section id="activities" class="activities">
+        <div class="activities__container container">
+            <h2 class="activities__title text-center mb-4">
+                Aventuras disponibles: Temporada Verano 2026
+            </h2>
+
+            <!-- Tabs -->
+            <ul class="activities__tabs nav nav-tabs">
+                <li class="nav-item">
+                    <button class="nav-link active" data-filter="all" type="button">
+                        Todas
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-filter="low" type="button">
+                        Dificultad Baja
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-filter="medium" type="button">
+                        Dificultad Media
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-filter="high" type="button">
+                        Dificultad Alta
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Grid único -->
+            <div class="activities__content mt-4">
+                <div class="activities__grid">
+
+                    <!-- ===== LOW ===== -->
+
+                    <article class="featured__card card" data-level="low">
+                        <a href="actividad.html" class="stretched-link"></a>
+                        <img src="https://images.squarespace-cdn.com/content/v1/5a36a5f5b7411c1532a7acac/1634212476530-54RLKTKY3WAKRNO3BKUH/89183F9D-536E-40E3-ACCD-ED1E8AEAD4C3.jpeg"
+                            class="card-img-top" alt="Kayak en Lago Conguillio">
+                        <div class="featured__card-body card-body">
+                            <span class="featured__badge level-badge">Dificultad Baja</span>
+
+
+                            <h5 class="featured__card-title">Trekking a Laguna Verde</h5>
+                            <p class="featured__card-location">📍 Reserva Nacional Tolhuaca, Araucanía</p>
+                            <p class="featured__card-availability">Cupos disponibles: <strong>6</strong></p>
+                            <p class="featured__card-price">Costo por persona: <strong>$20.000 CLP</strong></p>
+                            <div class="featured__actions">
+                                <button type="button" class="featured__button btn btn-outline-primary">Ver
+                                    detalles</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="featured__card card" data-level="low">
+                        <a href="actividad.html" class="stretched-link"></a>
+                        <img src="https://d6myp1633h7qr.cloudfront.net/products/339e8625-a428-47fd-bf93-dd7d41b77c6d_desktop.webp"
+                            class="card-img-top" alt="Kayak en Lago Conguillio">
+                        <div class="featured__card-body card-body">
+                            <span class="featured__badge level-badge">Dificultad Baja</span>
+
+
+                            <h5 class="featured__card-title">Kayak en Lago Conguillío</h5>
+                            <p class="featured__card-location">📍 Parque Nacional Conguillío, Araucanía</p>
+                            <p class="featured__card-availability">Cupos disponibles: <strong>6</strong></p>
+                            <p class="featured__card-price">Costo por persona: <strong>$20.000 CLP</strong></p>
+                            <div class="featured__actions">
+                                <button type="button" class="featured__button btn btn-outline-primary">Ver
+                                    detalles</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="featured__card card" data-level="low">
+                        <a href="actividad.html" class="stretched-link"></a>
+                        <img src="https://nativamalalcahuello.cl/wp-content/uploads/2024/08/Ciclovia-Manzanar-Malalcahuello.jpg"
+                            class=" card-img-top" alt="Kayak en Lago Conguillio">
+                        <div class="featured__card-body card-body">
+                            <span class="featured__badge level-badge">Dificultad Baja</span>
+
+
+                            <h5 class="featured__card-title">Ciclovía El Manzanar</h5>
+                            <p class="featured__card-location">📍 Lonquimay, Araucanía</p>
+                            <p class="featured__card-availability">Cupos disponibles: <strong>6</strong></p>
+                            <p class="featured__card-price">Costo por persona: <strong>$20.000 CLP</strong></p>
+                            <div class="featured__actions">
+                                <button type="button" class="featured__button btn btn-outline-primary">Ver
+                                    detalles</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- ===== MEDIUM ===== -->
+
+                    <article class="featured__card card" data-level="medium">
+                        <a href="actividad.html" class="stretched-link"></a>
+                        <img src="https://melipewunko.cl/wp-content/uploads/2025/05/Tour-Reserva-Nacional-de-China-Muerta-Turismo-Melipewunko-5.jpg"
+                            class="card-img-top" alt="Senderismo en Bosque de Araucarias">
+                        <div class="featured__card-body card-body">
+
+                            <span class="featured__badge level-badge">Dificultad Media</span>
+
+                            <h5 class="featured__card-title">Senderismo Araucarias Milenarias</h5>
+                            <p class="featured__card-location">📍 Melipeuco, Araucanía</p>
+                            <p class="featured__card-availability">Cupos disponibles: <strong>12</strong></p>
+                            <p class="featured__card-price">Costo por persona: <strong>$25.000 CLP</strong></p>
+                            <div class="featured__actions">
+                                <button type="button" class="featured__button btn btn-outline-primary">Ver
+                                    detalles</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="featured__card card" data-level="medium">
+                        <a href="actividad.html" class="stretched-link"></a>
+                        <img src="https://www.tangol.com/Fotos/Tours/parque-nacional-huerquehue_5081_201909131325360.Mobile.JPG"
+                            class="card-img-top" alt="Senderismo en Bosque de Araucarias">
+                        <div class="featured__card-body card-body">
+
+                            <span class="featured__badge level-badge">Dificultad Media</span>
+
+                            <h5 class="featured__card-title">Trekking Laguna Huerquehue</h5>
+                            <p class="featured__card-location">📍 Parque Nacional Huerquehue, Araucanía</p>
+                            <p class="featured__card-availability">Cupos disponibles: <strong>12</strong></p>
+                            <p class="featured__card-price">Costo por persona: <strong>$25.000 CLP</strong></p>
+                            <div class="featured__actions">
+                                <button type="button" class="featured__button btn btn-outline-primary">Ver
+                                    detalles</button>
+                            </div>
+                        </div>
+                    </article>
+
+              
+                    <!-- ===== HIGH ===== -->
+
+                    <article class="featured__card card" data-level="high">
+                        <a href="actividad.html" class="stretched-link"></a>
+                        <!-- Bootstrap stretched-link cubre toda la tarjeta -->
+                        <img src="https://pbs.twimg.com/media/FeEVrr5XgAAszqU.jpg" class="card-img-top"
+                            alt="Nombre de actividad">
+                        <div class="featured__card-body card-body">
+                            <span class="featured__badge level-badge">Dificultad Alta</span>
+
+                            <h5 class="featured__card-title">Trekking a Salto Punta Negra
+                            </h5>
+                            <p class="featured__card-location">📍 Lonquimay, Araucanía</p>
+                            <p class="featured__card-availability">Cupos disponibles: <strong>8</strong>
+
+                            </p>
+                            <p class="featured__card-price">Costo por persona: <strong>$45.000 CLP</strong>
+
+                            </p>
+                            <div class="featured__actions">
+                                <button type="button" class="featured__button btn btn-outline-primary">
+                                    Ver detalles
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="featured__card card" data-level="high">
+                        <a href="actividad.html" class="stretched-link"></a>
+                        <!-- Bootstrap stretched-link cubre toda la tarjeta -->
+                        <img src="https://turismolikankura.cl/wp-content/uploads/2020/08/sollipulli-volcan.jpg"
+                            class="card-img-top" alt="Nombre de actividad">
+                        <div class="featured__card-body card-body">
+                            <span class="featured__badge level-badge">Dificultad Alta</span>
+
+                            <h5 class="featured__card-title">Ascenso Volcán Sollipulli
+                            </h5>
+                            <p class="featured__card-location">📍 Melipeuco, Araucanía</p>
+                            <p class="featured__card-availability">Cupos disponibles: <strong>8</strong>
+
+                            </p>
+                            <p class="featured__card-price">Costo por persona: <strong>$45.000 CLP</strong>
+
+                            </p>
+                            <div class="featured__actions">
+                                <button type="button" class="featured__button btn btn-outline-primary">
+                                    Ver detalles
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="featured__card card" data-level="high">
+                        <a href="actividad.html" class="stretched-link"></a>
+                        <!-- Bootstrap stretched-link cubre toda la tarjeta -->
+                        <img src="https://images.unsplash.com/photo-1613444205117-8bae7ac2674b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top" alt="Nombre de actividad">
+                        <div class="featured__card-body card-body">
+                            <span class="featured__badge level-badge">Dificultad Alta</span>
+
+                            <h5 class="featured__card-title">Downhill araucarias</h5>
+                            <p class="featured__card-location">📍 Malalcahuello, Araucanía </p>
+                            <p class="featured__card-availability">Cupos disponibles: <strong>8</strong>
+
+                            </p>
+                            <p class="featured__card-price">Costo por persona: <strong>$45.000 CLP</strong>
+
+                            </p>
+                            <div class="featured__actions">
+                                <button type="button" class="featured__button btn btn-outline-primary">
+                                    Ver detalles
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección: TESTIMONIOS -->
+    <section class="testimonials py-5 bg-light">
+        <div class="testimonials__container container">
+            <h2 class="testimonials__title text-center mb-5">Reseñas de nuestros viajeros</h2>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column flex-md-row justify-content-center align-items-start gap-4">
+
+                            <!-- Testimonio 1 -->
+                            <div class="testimonials__item p-4 bg-white rounded shadow-sm">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=80"
+                                        class="rounded-circle me-3" alt="Foto de viajero 1"
+                                        style="width:50px; height:50px;">
+                                    <div>
+                                        <h5 class="mb-0">Natalia Rojas</h5>
+                                        <small class="text-muted">Viaje, 2026</small>
+                                    </div>
+                                </div>
+                                <p class="mb-2">⭐️ 4,6</p>
+                                <p class="mb-0">
+                                    El kayak en Lago Conguillío fue una experiencia increíble, la naturaleza es
+                                    impresionante y los guías muy profesionales.
+                                </p>
+                            </div>
+
+                            <!-- Testimonio 2 -->
+                            <div class="testimonials__item p-4 bg-white rounded shadow-sm">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80"
+                                        class="rounded-circle me-3" alt="Foto de viajero 2"
+                                        style="width:50px; height:50px;">
+                                    <div>
+                                        <h5 class="mb-0">Matías Fuentes</h5>
+                                        <small class="text-muted">Viaje, 2025</small>
+                                    </div>
+                                </div>
+                                <p class="mb-2">⭐️ 4,8</p>
+                                <p class="mb-0">
+                                    El sendero de Araucarias Milenarias superó mis expectativas. Me sentí en conexión
+                                    total con la naturaleza.
+                                </p>
+                            </div>
+
+                            <!-- Testimonio 3 -->
+                            <div class="testimonials__item p-4 bg-white rounded shadow-sm">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=80"
+                                        class="rounded-circle me-3" alt="Foto de viajera 3"
+                                        style="width:50px; height:50px;">
+                                    <div>
+                                        <h5 class="mb-0">Andrea López</h5>
+                                        <small class="text-muted">Viaje, 2024</small>
+                                    </div>
+                                </div>
+                                <p class="mb-2">⭐️ 5,0</p>
+                                <p class="mb-0">
+                                    Disfruté cada minuto. La logística fue perfecta y los paisajes son simplemente
+                                    mágicos.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column flex-md-row justify-content-center align-items-start gap-4">
+
+                            <!-- Testimonio 4 -->
+                            <div class="testimonials__item p-4 bg-white rounded shadow-sm">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=80"
+                                        class="rounded-circle me-3" alt="Foto de viajero 4"
+                                        style="width:50px; height:50px;">
+                                    <div>
+                                        <h5 class="mb-0">Juan Pablo Castro</h5>
+                                        <small class="text-muted">Viaje, 2023</small>
+                                    </div>
+                                </div>
+                                <p class="mb-2">⭐️ 4,7</p>
+                                <p class="mb-0">
+                                    El downhill fue adrenalina pura, muy divertido y seguro. ¡Recomendado 100%!
+                                </p>
+                            </div>
+
+                            <!-- Testimonio 5 -->
+                            <div class="testimonials__item p-4 bg-white rounded shadow-sm">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?w=80"
+                                        class="rounded-circle me-3" alt="Foto de viajera 5"
+                                        style="width:50px; height:50px;">
+                                    <div>
+                                        <h5 class="mb-0">Laura Méndez</h5>
+                                        <small class="text-muted">Viaje, 2022</small>
+                                    </div>
+                                </div>
+                                <p class="mb-2">⭐️ 4,9</p>
+                                <p class="mb-0">
+                                    Cada actividad estaba muy bien organizada. Me encantó la atención y el cuidado con
+                                    el medio ambiente.
+                                </p>
+                            </div>
+
+                            <!-- Testimonio 6 -->
+                            <div class="testimonials__item p-4 bg-white rounded shadow-sm">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80"
+                                        class="rounded-circle me-3" alt="Foto de viajero 6"
+                                        style="width:50px; height:50px;">
+                                    <div>
+                                        <h5 class="mb-0">Kevin Araya</h5>
+                                        <small class="text-muted">Viaje, 2021</small>
+                                    </div>
+                                </div>
+                                <p class="mb-2">⭐️ 5,0</p>
+                                <p class="mb-0">
+                                    Excelente experiencia. Los paisajes son de postal y el equipo hace que todo sea muy
+                                    seguro y cómodo.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección: FAQ -->
+    <section class="faq">
+        <div class="faq__container container">
+            <h2 class="faq__title text-center mb-4">Preguntas Frecuentes</h2>
+
+            <div class="faq__accordion accordion" id="accordionExample">
+
+                <!-- Pregunta: Transporte a la zona -->
+                <div class="faq__accordion-item accordion-item">
+                    <h2 class="faq__accordion-header accordion-header">
+                        <button class="faq__accordion-button accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            ¿Cómo puedo llegar a la zona? / Transporte a la zona
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="faq__accordion-collapse accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="faq__accordion-body accordion-body">
+                            Ofrecemos recomendaciones de rutas desde Santiago y otras ciudades cercanas. También podemos
+                            coordinar traslados privados o transporte compartido con anticipación.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta: Seguro de vida -->
+                <div class="faq__accordion-item accordion-item">
+                    <h2 class="faq__accordion-header accordion-header">
+                        <button class="faq__accordion-button accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            ¿Cuentan con seguro de vida?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="faq__accordion-collapse accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="faq__accordion-body accordion-body">
+                            Sí, todos nuestros visitantes están cubiertos con un seguro de vida durante la actividad.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta: Zonas a visitar -->
+                <div class="faq__accordion-item accordion-item">
+                    <h2 class="faq__accordion-header accordion-header">
+                        <button class="faq__accordion-button accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            ¿Qué zonas puedo visitar?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="faq__accordion-collapse accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="faq__accordion-body accordion-body">
+                            Puedes visitar senderos de humedales, áreas protegidas y miradores naturales, todos guiados
+                            para
+                            respetar la flora y fauna local.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta: Qué incluye cada paquete -->
+                <div class="faq__accordion-item accordion-item">
+                    <h2 class="faq__accordion-header accordion-header">
+                        <button class="faq__accordion-button accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            ¿Qué incluye cada paquete?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="faq__accordion-collapse accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="faq__accordion-body accordion-body">
+                            Cada paquete incluye transporte sugerido, guía certificado, actividades en la zona, y seguro
+                            de
+                            vida.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta: Mascotas -->
+                <div class="faq__accordion-item accordion-item">
+                    <h2 class="faq__accordion-header accordion-header">
+                        <button class="faq__accordion-button accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive">
+                            ¿Puedo llevar a mi mascota?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="faq__accordion-collapse accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="faq__accordion-body accordion-body">
+                            No, por respeto a la fauna y flora local, no se permite el ingreso de mascotas a las zonas
+                            protegidas.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta: Asados y fiestas -->
+                <div class="faq__accordion-item accordion-item">
+                    <h2 class="faq__accordion-header accordion-header">
+                        <button class="faq__accordion-button accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                            aria-controls="collapseSix">
+                            ¿Puedo hacer asados o una fiesta durante la visita?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="faq__accordion-collapse accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="faq__accordion-body accordion-body">
+                            No se permite realizar asados o fiestas en las zonas protegidas para mantener la seguridad y
+                            conservación del entorno natural.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+
+        <div class="footer__container">
+
+            <!-- Marca -->
+            <div class="footer__brand">
+                <h3 class="footer__logo">Raíz Salvaje</h3>
+                <p class="footer__description">
+                    Agencia de Ecoturismo basada en la Araucanía Andina desde 2019.
+                </p>
+            </div>
+
+            <!-- Grid principal -->
+            <div class="footer__grid">
+
+                <!-- Contacto -->
+                <div class="footer__column">
+                    <h4 class="footer__subtitle">¿Tienes alguna duda?</h4>
+
+                    <p class="footer__text">
+                        Respondemos consultas de
+                        <strong>lunes a viernes de 9:00 a 18:00 hrs</strong>
+                        y fines de semana de
+                        <strong>10:00 a 16:00 hrs</strong>.
+                    </p>
+
+                    <ul class="footer__list">
+                        <li class="footer__item"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z"
+                                    fill="currentColor" />
+                            </svg>
+                            contacto@raizsalvaje.cl</li>
+                        <li class="footer__item"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.54 5C6.6 5.89 6.75 6.76 6.99 7.59L5.79 8.79C5.38 7.59 5.12 6.32 5.03 5H6.54ZM16.4 17.02C17.25 17.26 18.12 17.41 19 17.47V18.96C17.68 18.87 16.41 18.61 15.2 18.21L16.4 17.02ZM7.5 3H4C3.45 3 3 3.45 3 4C3 13.39 10.61 21 20 21C20.55 21 21 20.55 21 20V16.51C21 15.96 20.55 15.51 20 15.51C18.76 15.51 17.55 15.31 16.43 14.94C16.331 14.903 16.2256 14.886 16.12 14.89C15.86 14.89 15.61 14.99 15.41 15.18L13.21 17.38C10.3755 15.9303 8.06967 13.6245 6.62 10.79L8.82 8.59C9.1 8.31 9.18 7.92 9.07 7.57C8.69132 6.41789 8.4989 5.21274 8.5 4C8.5 3.45 8.05 3 7.5 3Z"
+                                    fill="currentColor" />
+                            </svg>
+                            +56 9 9881 8848</li>
+
+                        <li class="footer__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
+                                    fill="currentColor" />
+                            </svg>
+
+                            Instagram: @raizsalvaje
+                        </li>
+
+                        <li class="footer__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.5 10V14H9.5V21H13.5V14H16.5L17.5 10H13.5V8C13.5 7.455 13.955 7 14.5 7H17.5V3H14.5C11.777 3 9.5 5.277 9.5 8V10H6.5Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                    fill="currentColor" />
+                            </svg>
+                            Raíz Salvaje Chile
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Formulario -->
+                <div class="footer__column">
+                    <h4 class="footer__subtitle">Reserva tu cupo</h4>
+                    <p class="footer__text footer__text--small">
+                        Completa el formulario y te enviaremos los datos de pago
+                        junto con el programa completo de la experiencia.
+                    </p>
+
+                    <form class="footer__form" id="reservationForm" novalidate>
+
+                        <div class="footer__form-group">
+                            <label class="footer__label" for="name">Nombre completo</label>
+                            <input class="footer__input" type="text" id="name" required>
+                            <small class="footer__error"></small>
+                        </div>
+
+                        <div class="footer__form-group">
+                            <label class="footer__label" for="email">Correo electrónico</label>
+                            <input class="footer__input" type="email" id="email" required>
+                            <small class="footer__help">
+                                Aquí recibirás los detalles de pago y el programa.
+                            </small>
+                            <small class="footer__error"></small>
+                        </div>
+
+                        <div class="footer__form-group">
+                            <label class="footer__label" for="activity">Actividad</label>
+                            <select class="footer__select" id="activity" required>
+                                <option value="" disabled selected>Selecciona una experiencia</option>
+                                <option value="kayak">Kayak en Lago Conguillio</option>
+                                <option value="trekking">Senderismo Araucarias Milenarias</option>
+                                <option value="downhill">Donwhill Malalcahuello</option>
+
+                            </select>
+                            <small class="footer__error"></small>
+                        </div>
+
+                        <div class="footer__form-row">
+                            <div class="footer__form-group">
+                                <label class="footer__label" for="date">Fecha</label>
+                                <input class="footer__input" type="date" id="date" required>
+                                <small class="footer__error"></small>
+                            </div>
+
+                            <div class="footer__form-group">
+                                <label class="footer__label" for="people">Personas</label>
+                                <input class="footer__input" type="number" id="people" min="1" required>
+                                <small class="footer__error"></small>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="footer__button button-primary">
+                            Solicitar reserva
+                        </button>
+
+                        <div class="footer__message" id="formMessage"></div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <!-- Modal de éxito -->
+    <div id="successModal" class="modal">
+        <div class="modal__content">
+            <span class="modal__icon material-symbols-outlined">
+                celebration
+            </span>
+            <button class="modal__close">&times;</button>
+            <h3>¡Reserva enviada!</h3>
+            <p>Gracias por tu solicitud. Dentro de las próximas 24 horas nos pondremos en contacto contigo.</p>
+        </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="bottom">
+        <p class="bottom__copyright">
+            © 2026 Raíz Salvaje · Turismo de bajo impacto en la Araucanía Andina
+        </p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main Js-->
+    <script src="main.js"></script>
+
+</body>
+
+</html>

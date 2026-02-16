@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as *;
+
+.level-badge {
+
+    margin: 0 0 1rem;
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    width: auto;
+    max-width: fit-content;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: $font-body;
+
+    // Dificultad usando data-level
+    article[data-level="low"] & {
+        background-color: $secondary-300;
+        color: $neutral-50;
+    }
+
+    article[data-level="medium"] & {
+        background-color: $secondary-500;
+        color: $neutral-50;
+    }
+
+    article[data-level="high"] & {
+        background-color: $secondary-700;
+        color: $neutral-50;
+    }
+
+
+}
+
+.level-badge[data-level="low"] {
+    background-color: $secondary-300;
+    color: $neutral-50;
+}
+
+.level-badge[data-level="medium"] {
+    background-color: $secondary-500;
+    color: $neutral-50;
+}
+
+.level-badge[data-level="high"] {
+    background-color: $secondary-700;
+    color: $neutral-50;
+}

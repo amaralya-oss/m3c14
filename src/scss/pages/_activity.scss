@@ -1,0 +1,100 @@
+@use "../abstracts/variables" as *;
+
+
+.activity {
+    padding: 0 2rem 0rem;
+
+    &__carousel-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .carousel {
+            width: 90%;
+            height: auto;
+            border-radius: 1rem;
+            overflow: hidden;
+
+            .carousel-item img {
+                width: 100%;
+                height: 40rem;
+                object-fit: cover;
+                border-radius: 1rem;
+                object-position: bottom;
+
+            }
+
+            @media screen and (max-width: 700px) {
+
+                margin-top: 7rem;
+
+                .carousel-item img {
+                    height: 20rem;
+                    object-position: bottom;
+                }
+            }
+        }
+
+    }
+
+    &__info-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 1.5rem;
+
+        .activity__title {
+            margin-bottom: 0.5rem;
+        }
+
+        .activity__subtitle {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            color: #6c757d;
+        }
+
+        .activity__details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+
+            .activity__availability,
+            .activity__price {
+                margin: 0;
+                font-size: 0.9rem;
+            }
+        }
+
+        .activity__button {
+            margin-top: 1rem;
+            width: fit-content;
+        }
+
+        .activity__description {
+            margin-top: 2rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    }
+
+
+}
+
+.activity-dates {
+    &__title {
+        font-weight: 600;
+    }
+
+    &__date {
+        font-weight: 900;
+        font-size: 1.1rem;
+        margin:0.5rem;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        color: $neutral-400;
+    }
+}

@@ -1,0 +1,37 @@
+// 1️⃣ Tus variables
+@use "abstracts/variables" as *;
+
+
+// 2️⃣ Bootstrap (solo colores si quieres personalizar)
+@use "../../node_modules/bootstrap/scss/bootstrap" with (
+  $primary: $primary,
+  $secondary: $secondary
+);
+
+
+// 3️⃣ Tu base (esto va DESPUÉS de bootstrap)
+@use "base/reset";
+@use "base/typography";
+@use "base/base";
+
+
+// 4️⃣ Layout
+@use "layout/header";
+@use "layout/footer";
+@use "layout/grid";
+
+
+// 5️⃣ Componentes
+@use "components/buttons";
+@use "components/cards";
+@use "components/forms";
+@use "components/hero";
+@use "components/breadcrumb";
+@use "components/badge";
+@use "components/modals";
+
+
+// 6️⃣ Páginas
+@use "pages/home";
+@use "pages/activity";
+@use "themes/theme";

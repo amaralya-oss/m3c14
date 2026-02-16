@@ -1,0 +1,71 @@
+
+// ==================================================
+// Fuentes
+// ==================================================
+
+$font-brand: 'Playfair Display', serif;
+$font-body: 'Source Sans 3', sans-serif;
+
+
+
+// ==================================================
+// Paleta color: Primario #b6cfe4
+// ==================================================
+
+$primary-100: #f0f5fa;
+$primary-200: #e2ecf4;
+$primary-300: #d3e2ef;
+$primary-400: #c5d9e9;
+$primary-500: #b6cfe4;
+$primary-600: #92a6b6;
+$primary-700: #6d7c89;
+$primary-800: #49535b;
+$primary-900: #24292e;
+
+$primary: $primary-500;
+
+
+// ==================================================
+// Paleta color: Secundario #687534
+// ==================================================
+
+
+$secondary-100: #e1e3d6;
+$secondary-200: #c3c8ae;
+$secondary-300: #a4ac85;
+$secondary-400: #86915d;
+$secondary-500: #687534;
+$secondary-600: #535e2a;
+$secondary-700: #3e461f;
+$secondary-800: #2a2f15;
+$secondary-900: #15170a;
+
+
+$secondary: $secondary-500;
+
+// ==================================================
+// Paleta color: Neutral #393027
+// ==================================================
+
+$neutral-50: #ffffff;
+$neutral-100: #d7d6d4;
+$neutral-200: #b0aca9;
+$neutral-300: #88837d;
+$neutral-400: #615952;
+$neutral-500: #393027; 
+$neutral-600: #2e261f;
+$neutral-700: #221d17;
+$neutral-800: #171310;
+$neutral-900: #0b0a08;
+
+$dark-custom: $neutral-500;
+
+
+// ==================================================
+// Paleta color: Dificultad badges
+// ==================================================
+
+$level-low: $secondary-200;   // primary / azul
+$level-medium: $secondary-500; // warning / amarillo
+$level-high: $secondary-800;   // danger / rojo
+
