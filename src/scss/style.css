@@ -12598,20 +12598,18 @@ article[data-level=high] .level-badge {
   line-height: 1.5;
 }
 .about__icon {
-  width: 50px;
-  height: 50px;
+  height: 6rem;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 auto 0.8rem;
 }
 .about__highlight {
   font-family: "Playfair Display", serif;
-  font-size: 1.1rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #6d7c89;
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto 0;
   line-height: 1.4;
 }
 
